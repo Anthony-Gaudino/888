@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>888 - Lotto & Bitcoin</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app-page">
+      <!-- Header -->
+      <header class="header header--page">
+        <h1 class="header__title header--h1">Lotto & Bitcoin</h1>
+        <div class="ribbon"><span class="ribbon__body">NEW</span></div>
+      </header>
+
+      <main class="app-main">
+        <div class="row">
+          <!-- Description panel -->
+          <div class="column column--25 column--gutters">
+            <div class="panel">
+              <header class="header">
+                <h2 class="header__title header--h2">The Irish Lotto</h2>
+              </header>
+              <div class="panel__body panel__body--info">
+                <p>
+                  Since 16<sup>th</sup> April 1988, the Irish Lotto draw takes
+                  place every Saturday at 8pm. On 30<sup>th</sup> May 1990 an
+                  additional Wednesday evening draw was introduced.
+                </p>
+                <p>
+                  What would EUR 100 in winnings invested on a draw date be
+                  worth in Euro now?
+                </p>
+                <p>
+                  Enter a date and time in the form to get the next draw date
+                  and time, with the current value of your investment.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column column--75">
+            <div class="row">
+              <div class="column column--100 column--gutters">
+                <!-- Form panel -->
+                <div class="panel">
+                  <header class="header">
+                    <h2 class="header__title header--h2">Enter a Date and Time</h2>
+                  </header>
+                  <div class="panel__body">
+                    <div class="controls">
+                      <input id="dateInput" class="input-text mr-20" type="datetime-local"/>
+                      <button id="submitButton" class="button">SUBMIT</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="column column--100 column--gutters">
+                <!-- Table panel -->
+                <div class="panel">
+                  <div class="panel__body panel__body--table">
+                    <table class="table">
+                      <colgroup>
+                        <col span="1" style="width: 16%;">
+                        <col span="1" style="width: 86%;">
+                      </colgroup>
+
+                      <thead class="table__header">
+                        <tr class="table__header-row">
+                          <th class="table__header-cell date-header">
+                            DRAW DATE/TIME
+                          </th>
+                          <th class="table__header-cell btc-val-header">
+                            YOUR BITCOIN'S VALUE
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody id="tableBody">
+                        <tr class="table__body-row">
+                          <td class="table__body-cell">
+                            <div class="table__cell-body"></div>
+                          </td>
+                          <td class="table__body-cell">
+                            <div class="table__cell-body"></div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
